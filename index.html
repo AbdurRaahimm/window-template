@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <ul>
+        <li id="home">Home</li>
+        <li id="about">/About</li>
+        <li id="btnCon">/Controls</li>
+    </ul>
+
+
+<div class="hidden">
+    <div id="HomeContent">
+        <h1>Home</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ullam repudiandae sequi minus in modi sapiente sit aliquam, doloremque, molestiae aliquid itaque pariatur praesentium atque officia saepe? Tempora, ea iste.</p>
+    <input type="text">
+    <input type="button" value="send">
+    </div>
+
+    <div id="AboutContent">
+        <h1>About</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ullam repudiandae sequi minus in modi sapiente sit aliquam, doloremque, molestiae aliquid itaque pariatur praesentium atque officia saepe? Tempora, ea iste.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ullam repudiandae sequi minus in modi sapiente sit aliquam, doloremque, molestiae aliquid itaque pariatur praesentium atque officia saepe? Tempora, ea iste.</p>
+    
+    </div>
+
+    <div id="ControlContent">
+        <div id="controls">
+            <button onclick="buttons.minimize()">Minimize (Toggle)</button>
+            <button onclick="buttons.maximize()">Maximize (Toggle)</button>
+            <button onclick="buttons.fullscreen()">Fullscreen (Toggle)</button>
+            <button onclick="buttons.move()">Move (Center, Center)</button>
+            <button onclick="buttons.resize()">Resize (50%, 50%)</button>
+            <button onclick="buttons.title()">Set Title</button>
+            <button onclick="buttons.color()">Set Color</button>
+            <button onclick="buttons.close()">Close</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <script src="https://rawcdn.githack.com/nextapps-de/winbox/0.1.8/dist/winbox.bundle.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
